@@ -2,6 +2,7 @@
 130+ responsive interfaces ready to use (copy and paste!) in your web or mobile apps. All interfaces are 100% bootstrap based.
 
 Website & Docs: http://www.bootstrapcraft.com
+
 License: http://www.bootstrapcraft.com/licenses
 version: 1.0
 Plugins:
