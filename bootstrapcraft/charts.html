@@ -1,1 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrapcraft - Charts</title>
+    
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/pretty-checkbox/dist/pretty-checkbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link href="assets/bootstrapcraft.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/Chart.min.js"></script>
+
+    <!-- Interface #116 -->
+    <section class="chart chart-tiny bg-gray">
+    	
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <canvas id="myChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+
+                    <script>
+                    var ctx = document.getElementById("myChart").getContext('2d');
+                    new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                          labels: ['Jan','Feb','Mar'],
+                          datasets: [
+                              { 
+                              data: [12, 21, 55],
+                              label: "Messages",
+                              borderColor: "#336699",
+                              fill: false
+                            },
+                            { 
+                              data: [5, 11, 22],
+                              label: "Users",
+                              borderColor: "#FF9900",
+                              fill: false
+                            }
+                          ]
+                        },
+                        options: {
+                        legend: {
+                            display: true,
+                            position: 'bottom'
+                          },
+                          title: {
+                            display: true,
+                            text: 'Data'
+                          }
+                        }
+                      });
+                    </script>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <canvas id="myChart2" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+
+                    <script>
+                    var ctx2 = document.getElementById("myChart2").getContext('2d');
+                    new Chart(ctx2, {
+                        type: 'pie',
+                        data: {
+                          labels: ["Messages", "Users"],
+                          datasets: [{
+                            backgroundColor: ["#336699", "#FF9900"],
+                            data: [987,112]
+                          }]
+                        },
+                        options: {
+                        legend: {
+                            display: true,
+                            position: 'bottom'
+                          },
+                          title: {
+                            display: true,
+                            text: 'Data'
+                          }
+                        }
+                    });                    
+                    </script>
+
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </section>
+    <!-- end Interface #116 -->
+
+    <hr>
+
+    <!-- Interface #117 -->
+    <section class="chart chart-tiny bg-gray">
+    	
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <canvas id="myChart3" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+
+                    <script>
+                    var ctx3 = document.getElementById("myChart3").getContext('2d');
+                    new Chart(ctx3, {
+                        type: 'bar',
+                        data: {
+                            labels: ["Messages", "Users"],
+                            datasets: [{
+                            backgroundColor: ["#336699", "#FF9900"],
+                            data: [987,112]
+                            }]
+                        },
+                        options: {
+                            legend: {
+                                display: true,
+                                position: 'bottom'
+                            },
+                            title: {
+                                display: true,
+                                text: 'Data'
+                            }
+                        }
+                    });  
+                    </script>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <canvas id="myChart4" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+
+                    <script>
+                    var ctx4 = document.getElementById("myChart4").getContext('2d');
+                    new Chart(ctx4, {
+                        type: 'doughnut',
+                        data: {
+                            labels: ["Messages", "Users"],
+                            datasets: [{
+                            backgroundColor: ["#336699", "#FF9900"],
+                            data: [987,112]
+                            }]
+                        },
+                        options: {
+                            legend: {
+                                display: true,
+                                position: 'bottom'
+                            },
+                            title: {
+                                display: true,
+                                text: 'Data'
+                            }
+                        }
+                    });                    
+                    </script>
+
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </section>
+    <!-- end Interface #117 -->
+
+    <hr>
+    
+    <!-- Interface #118 -->
+    <section class="chart chart-tiny bg-gray">
+    	
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <canvas id="myChart5" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+
+                    <script>
+                    var ctx5 = document.getElementById("myChart5").getContext('2d');
+                    new Chart(ctx5, {
+                    type: 'radar',
+                    data: {
+                        labels: ["Registrations", "Logins", "Likes", "Comments", "Shares"],
+                        datasets: [
+                        {
+                            label: "Free Users",
+                            fill: true,
+                            backgroundColor: "rgba(51,102,153,0.2)",
+                            borderColor: "rgba(51,102,153,1)",
+                            pointBorderColor: "#fff",
+                            pointBackgroundColor: "rgba(51,102,153,1)",
+                            data: [8.77,55.61,21.69,6.62,6.82]
+                        }, {
+                            label: "Pro Users",
+                            fill: true,
+                            backgroundColor: "rgba(255,153,0,0.2)",
+                            borderColor: "rgba(255,153,0,1)",
+                            pointBorderColor: "#fff",
+                            pointBackgroundColor: "rgba(255,153,0,1)",
+                            pointBorderColor: "#fff",
+                            data: [25.48,54.16,7.61,8.06,4.45]
+                        }
+                        ]
+                    },
+                    options: {
+                        legend: {
+                            display: true,
+                            position: 'bottom'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Data'
+                        }
+                    }
+                });                    
+                </script>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <canvas id="myChart6" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+
+                    <script>
+                    var ctx6 = document.getElementById("myChart6").getContext('2d');
+                    new Chart(ctx6, {
+                        type: 'polarArea',
+                        data: {
+                          labels: ["Likes", "Comments"],
+                          datasets: [
+                            {
+                              label: "Users",
+                              backgroundColor: ["#336699", "#FF9900"],
+                              data: [2134,4567,543]
+                            }
+                          ]
+                        },
+                        options: {
+                          legend: {
+                            display: true,
+                            position: 'bottom'
+                          },
+                          title: {
+                            display: true,
+                            text: 'Data'
+                          }
+                        }
+                    });                                     
+                    </script>
+
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </section>
+    <!-- end Interface #118 -->
+
+    <hr>
+    
+  </body>
+</html>
